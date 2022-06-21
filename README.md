@@ -15,7 +15,7 @@
 ### Data Source
 - [國立陽明交大餐廳營養分析表](https://www.ga.nctu.edu.tw/general-division/rest/c-5Njh/g-1?fbclid=IwAR3r5uhtZhqKuAVFKHUEmMeB8wUh0QHyWEpm83xjcoMc8XinOFto4SBSjdk)
 - [國立陽明交通大學各餐廳營業時間表](https://www.ga.nctu.edu.tw/general-division/rest/v-TmrI)
-- 運動消耗卡路里資料表([衛生福利部國民健康署](https://www.hpa.gov.tw/Pages/Detail.aspxnodeid=571&pid=9738&fbclid=IwAR18CmmzxVKvd77PrhkZFdz37agEJ1kIXW16m3V3OlP_K1jGDMsp67rd-Lo)):
+- 運動消耗卡路里資料表([衛生福利部國民健康署](https://www.hpa.gov.tw/Pages/Detail.aspxnodeid=571&pid=9738&fbclid=IwAR18CmmzxVKvd77PrhkZFdz37agEJ1kIXW16m3V3OlP_K1jGDMsp67rd-Lo))
 
 
 ## Application
@@ -37,7 +37,7 @@
 - 主頁面會透過使用者的體重，計算出使用者一天建議攝取的熱量，及今天已攝取的熱量，並顯示過往的飲食紀錄
 - 透過輸入指定日期，使用者可查詢特定日期所攝取的總熱量
 - 按下"登出帳號"，可回到登入/註冊頁面
-- 主頁面上方有我們的四大主要功能: 修改資料、推薦餐點、紀錄飲食、運動身體好，按下任一功能便會跳往特定頁面
+- 主頁面上方顯示四大主要功能: 修改資料、推薦餐點、紀錄飲食、運動身體好，按下任一功能便會跳往特定頁面
 
 **4. 修改資料頁面：**
 - 此頁面將提供更改使用者資料的功能
@@ -50,7 +50,7 @@
 1. 你想吃哪間學餐？（女二、研三、二餐 )
 2. 你想吃哪種類型？（正餐、飲料/點心、早餐）
 3. 排序依據？（價錢低到高、熱量低到高、依熱門程度）
-- 另外會根據使用者此刻查詢的時間，列出此時正在營業的店家，若是此時皆無店家營業，我們將顯示"抱歉，目前時間沒有可供應的餐點"
+- 另外會根據使用者此刻查詢的時間，列出此時正在營業的店家，若是此時皆無店家營業，將顯示"抱歉，目前時間沒有可供應的餐點"
 - 若使用者查詢餐點完畢，則可按下"回首頁"，回到主頁面
 ![image](https://github.com/Tristaaaa/NCTU_StudentCafeteria_ManageSystem/blob/main/demo/recommendation.gif)
 
