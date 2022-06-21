@@ -10,12 +10,10 @@
 
 ## Data
 ### Data Source
-- 國立陽明交大餐廳營養分析表
-https://www.ga.nctu.edu.tw/general-division/rest/c-5Njh/g-1?fbclid=IwAR3r5uhtZhqKuAVFKHUEmMeB8wUh0QHyWEpm83xjcoMc8XinOFto4SBSjdk
-- 國立陽明交通大學各餐廳營業時間表
-https://www.ga.nctu.edu.tw/general-division/rest/v-TmrI
-- 運動消耗卡路里資料表(衛生福利部國民健康署):
-https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=571&pid=9738&fbclid=IwAR18CmmzxVKvd77PrhkZFdz37agEJ1kIXW16m3V3OlP_K1jGDMsp67rd-Lo
+- [國立陽明交大餐廳營養分析表](https://www.ga.nctu.edu.tw/general-division/rest/c-5Njh/g-1?fbclid=IwAR3r5uhtZhqKuAVFKHUEmMeB8wUh0QHyWEpm83xjcoMc8XinOFto4SBSjdk)
+- [國立陽明交通大學各餐廳營業時間表](https://www.ga.nctu.edu.tw/general-division/rest/v-TmrI)
+- 運動消耗卡路里資料表([衛生福利部國民健康署](https://www.hpa.gov.tw/Pages/Detail.aspxnodeid=571&pid=9738&fbclid=IwAR18CmmzxVKvd77PrhkZFdz37agEJ1kIXW16m3V3OlP_K1jGDMsp67rd-Lo)):
+
 
 ## Application
 ### Interface
@@ -42,9 +40,7 @@ https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=571&pid=9738&fbclid=IwAR18CmmzxV
 - 此頁面將提供更改使用者資料的功能
 - 使用者必須輸入帳號(帳號不可修改)，使用者可自由選擇是否填寫新密碼、新名字、新身高、新體重
 - 若輸入格式/內容不符，則會出現對應提醒
-
 ![image](https://github.com/Tristaaaa/NCTU_StudentCafeteria_ManageSystem/blob/main/demo/application.gif)
-
 
 **5. 推薦餐廳頁面：**
 - 透過三種問題選擇，推薦使用者最適合的餐點排序，分別為：
@@ -53,7 +49,6 @@ https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=571&pid=9738&fbclid=IwAR18CmmzxV
 3. 排序依據？（價錢低到高、熱量低到高、依熱門程度）
 - 另外會根據使用者此刻查詢的時間，列出此時正在營業的店家，若是此時皆無店家營業，我們將顯示"抱歉，目前時間沒有可供應的餐點"
 - 若使用者查詢餐點完畢，則可按下"回首頁"，回到主頁面
-
 ![image](https://github.com/Tristaaaa/NCTU_StudentCafeteria_ManageSystem/blob/main/demo/recommendation.gif)
 
 **6. 記錄飲食頁面：**
@@ -63,5 +58,20 @@ https://www.hpa.gov.tw/Pages/Detail.aspx?nodeid=571&pid=9738&fbclid=IwAR18CmmzxV
 **7. 運動身體好頁面：**
 - 此頁面將根據使用者今天攝取的熱量，顯示建議的運動時間
 - 使用者在選擇運動後，將會顯示若是從事該運動，必須持續運動幾個小時，才能消耗對應的熱量
+
+## Database
+### ER Model of Schema
+![image](https://github.com/Tristaaaa/NCTU_StudentCafeteria_ManageSystem/blob/main/demo/ERModel.png)
+- user_eat: 紀錄各品項被消費的次數，推薦菜單建立並算出熱門選項
+- user_info: 紀錄每個註冊的使用者的資料，包括帳號/ 密碼/ 名字/ 身高/ 體重
+- 營業時間: 紀錄各餐廳的營業時間，因為各家餐廳都有不同的營業時間，所以只會提供在使用者查詢的時後有營業的餐廳做為查詢
+- 消耗熱量: 紀錄各項運消耗熱量，利用熱量換算並推薦使用者進行運動
+- 各餐廳品項: 紀錄餐點名稱/ 售價/ 一份(g)/ 蛋白質(g)/ 脂肪(g)/ 醣類(g)/ 熱量(大卡)
+
+## Connect Database to Application
+![image](https://github.com/Tristaaaa/NCTU_StudentCafeteria_ManageSystem/blob/main/demo/dbtoweb.png)
+- 利用php來獲取user的request，並抓取資料庫中的data，再透過html將結果呈現於網頁
+- 使用XAMPP作為網頁伺服器架站的工具，其整合了Apache+MariaDB+PHP+Perl，安裝連線後，將php檔放進相應的根目錄中後，就能在本機進行測試和操作
+
 
 
