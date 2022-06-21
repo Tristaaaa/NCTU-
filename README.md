@@ -34,7 +34,7 @@
 - 此頁面將提供更改使用者資料的功能。使用者必須輸入帳號(帳號不可修改)，使用者可自由選擇是否填寫新密碼、新名字、新身高、新體重。
 - 若輸入格式/內容不符，則會出現對應提醒。
 
-![8gxim-40cmh](https://github.com/Tristaaaa/NCTU_StudentCafeteria_ManageSystem/blob/main/demo/application.gif)
+![image](https://github.com/Tristaaaa/NCTU_StudentCafeteria_ManageSystem/blob/main/demo/application.gif)
 
 
 **5. 推薦餐廳頁面：**
